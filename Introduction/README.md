@@ -1,1 +1,3 @@
-
+vi
+echo
+printf
