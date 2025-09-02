@@ -12,4 +12,22 @@ In shell scripting, the `echo` command is one of the most basic and frequently u
 
 The `printf` command in shell scripting provides more advanced formatting options than `echo`. Unlike `echo`, it does not automatically add a newline to the end of the output, so the user must include `\n` when needed. `printf` supports format specifiers similar to the C programming language, such as `%s` for strings, `%d` for integers, and `%f` for floating-point numbers. This allows for precise control over how text and variables are displayed, making it ideal for situations where alignment, precision, or consistent formatting is required. Because of its flexibility, `printf` is often used in scripts where output needs to be structured in a specific way.
 
+# Examples of `echo` and `printf` in Shell Scripting
+
+```bash
+#!/bin/bash
+# Example of echo
+name="Adrian"
+echo "Hello, $name!"
+echo "This is a new line."
+echo -e "Here is a tab:\tIndented text"
+
+# Example of printf
+item="Apples"
+quantity=12
+price=1.50
+
+printf "I need %d %s, which will cost \$%.2f.\n" $quantity $item $price
+printf "Name: %s\nAge: %d\n" "Adrian" 25
+
 
