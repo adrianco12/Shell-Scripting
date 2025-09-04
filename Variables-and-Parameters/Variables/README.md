@@ -45,31 +45,28 @@ echo "Sum is: $sum"
 name="Bob"
 echo "Hello, $name!"
 
-```bash
-# -------------------------------------
-# 🐚 Shell Scripting: Types of Variables
-# -------------------------------------
+# Types of Variables
+
 
 # 🔹 1. Local Variables
-# These are defined and used only within the current shell session or script.
-# They are NOT passed to child processes.
+These are defined and used only within the current shell session or script.
+They are NOT passed to child processes.
 
 my_var="Hello"
 echo "$my_var"  # Accessible in this shell
 
 # 🔹 2. Environment Variables
-# These are global variables available to the current shell and any child processes.
-# You "export" a local variable to make it an environment variable.
+These are global variables available to the current shell and any child processes.
+You "export" a local variable to make it an environment variable.
 
 EDITOR="vim"       # Local variable
 export EDITOR      # Now it's an environment variable
 echo "$EDITOR"     # Still accessible here
 bash -c 'echo $EDITOR'  # Accessible in child process too
 
-# 🔹 3. Positional Parameters
-# These hold arguments passed to a script or function.
-
-# Example: ./script.sh arg1 arg2
+#🔹 3. Positional Parameters
+These hold arguments passed to a script or function.
+Example: ./script.sh arg1 arg2
 
 # Inside the script:
 echo "Script name: $0"   # The name of the script
