@@ -1,93 +1,57 @@
-# How Variables Work
+# ---------------------------------------
+# 🐚 Shell Scripting: Variables & Parameters
+# ---------------------------------------
 
-# 🔹 1. Declaring Variables
-name="Alice"
-age=30
-
-# No spaces around the equals sign!
-
-# 🔹 2. Accessing Variables
-echo "Name: $name"
-echo "Age: $age"
-echo "Name is ${name}"  # Braces are optional but useful
-
-# 🔹 3. Environment vs. Local Variables
-export PATH="/usr/local/bin:$PATH"  # Export makes it available to child processes
-
-# 🔹 4. Command Substitution
-current_date=$(date)
-echo "Today is: $current_date"
-
-# Alternate (older) syntax:
-current_date=`date`
-
-# 🔹 5. Default Values
-echo "User: ${username:-guest}"  # Prints 'username' if set, else 'guest'
-
-# 🔹 6. Read Input into Variables
-echo "Enter your name:"
-read user_name
-echo "Hello, $user_name!"
-
-# 🔹 7. Arrays (Bash-specific)
-fruits=("apple" "banana" "cherry")
-echo "First fruit: ${fruits[0]}"
-
-# 🔹 8. Arithmetic Operations
-a=5
-b=3
-((sum = a + b))
-echo "Sum is: $sum"
-
-# 🔹 Example Script
-#!/bin/bash
-
-name="Bob"
-echo "Hello, $name!"
-
-# Types of Variables
-
+# 🔸 VARIABLES
+# Variables are used to store data (text, numbers, paths, etc.)
+# There are two main types: local and environment.
 
 # 🔹 1. Local Variables
-These are defined and used only within the current shell session or script.
-They are NOT passed to child processes.
-
-my_var="Hello"
-echo "$my_var"  # Accessible in this shell
+name="Alice"        # Stored only in the current shell or script
+echo "$name"        # Access using $ or ${}
 
 # 🔹 2. Environment Variables
-These are global variables available to the current shell and any child processes.
-You "export" a local variable to make it an environment variable.
+# Used across processes. Export them to child processes.
+export LANG="en_US.UTF-8"
+bash -c 'echo $LANG'  # Child shell can access it
 
-EDITOR="vim"       # Local variable
-export EDITOR      # Now it's an environment variable
-echo "$EDITOR"     # Still accessible here
-bash -c 'echo $EDITOR'  # Accessible in child process too
+# 🔸 PARAMETERS
+# Parameters are special variables passed to scripts or functions.
 
-#🔹 3. Positional Parameters
-These hold arguments passed to a script or function.
-Example: ./script.sh arg1 arg2
+# 🔹 3. Positional Parameters
+# These are used to handle arguments passed to a script or function.
+
+# Example: ./myscript.sh one two
 
 # Inside the script:
-echo "Script name: $0"   # The name of the script
-echo "First arg: $1"     # arg1
-echo "Second arg: $2"    # arg2
-echo "All args: $@"      # All arguments as separate words
-echo "Arg count: $#"     # Number of arguments
-echo "Exit status of last command: $?"
+echo "Script name: $0"   # Name of the script (e.g., myscript.sh)
+echo "First arg: $1"     # one
+echo "Second arg: $2"    # two
+echo "Total args: $#"    # 2
+echo "All args: $@"      # one two (each quoted separately)
+echo "All args: $*"      # one two (as a single string)
 
+# 🔹 4. Special Parameters
+# $?  - Exit status of the last command
+# $$  - PID of the current script
+# $!  - PID of the last background process
+
+# Example:
+ls /not/a/path
+echo "Exit code: $?"     # Non-zero if the command failed
+
+# Summary:
 # $0      - Script name
 # $1..$9  - First to ninth arguments
 # $@      - All arguments (individually quoted)
-# $*      - All arguments (as a single string)
+# $*      - All arguments (single string)
 # $#      - Number of arguments
-# $?      - Exit status of the last command
-# $$      - PID of the current script
-# $!      - PID of the last background command
-```
+# $?      - Exit status of last command
+# $$      - Script’s process ID
+# $!      - Background process ID
 
-
-echo "Enter your favorite color:"
-read color
-echo "$name likes $color."
+# 📝 Best Practices:
+# - Quote variables: "$var"
+# - Use braces for clarity: ${var}
+# - Always check if parameters exist before using them
 ```
