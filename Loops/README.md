@@ -27,7 +27,7 @@ Bash provides commands to manage loop execution:
 These controls give developers fine-grained command over loop behavior and execution flow.
 
 ## 📘 Script and Summary
-Loops are fundamental in Bash scripting for handling repetition and automation. By using different loop types and control statements, scripts can efficiently process data, perform checks, and execute complex repetitive tasks with minimal code. For our script, we will calculate a factorial by utilizing loops.
+Loops are fundamental in Bash scripting for handling repetition and automation. By using different loop types and control statements, scripts can efficiently process data, perform checks, and execute complex repetitive tasks with minimal code. For our script, we will calculate a factorial by utilizing loops. In addition, we will add on to our previous scripts and be able to take in multiple parameters.
 
 ---
 **Author:** Adrian Cortez
