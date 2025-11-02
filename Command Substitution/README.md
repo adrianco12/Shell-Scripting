@@ -15,6 +15,9 @@ The `$( )` syntax is preferred because it is easier to read, supports nesting, a
 ## 🔍 How It Works
 When a command is enclosed within `$( )` or backticks, Bash executes that command first and replaces the entire expression with its output. This result can then be used as an argument, stored in a variable, or processed further in the script.
 
+## Script
+Now we will build on our previous script and utilize command substitution to print file size and directory size of parameters. 
+
 ## 📘 Summary
 Command substitution allows Bash scripts to execute commands dynamically and use their output in real time. By integrating command results into script logic, it provides greater flexibility, efficiency, and automation capability.
 
