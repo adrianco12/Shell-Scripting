@@ -16,7 +16,10 @@ Modern Bash also supports **double brackets `[[ ]]`**, which offer enhanced func
 - **String Tests:** Check if strings are equal, not equal, or empty.  
 - **Numeric Tests:** Compare numbers for equality, greater than, or less than conditions.  
 - **File Tests:** Verify file existence, permissions, or types (regular file, directory, symbolic link, etc.).  
-- **Logical Tests:** Combine multiple conditions using logical operators like `&&` (AND) and `||` (OR).
+- **Logical Tests:** Combine multiple conditions using logical operators like `&&` (AND) and `||` (OR).  
+
+## Script
+Now we will build on our knowledge with parameters to build a practical script. This script can tell us right away what kind of parameter the user inputs, making use of parameters and tests.
 
 ## 📘 Summary
 Tests in Bash are essential for decision-making within scripts. By evaluating expressions and returning true or false results, they allow scripts to respond dynamically to different conditions, automate checks, and handle logic efficiently.
