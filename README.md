@@ -46,7 +46,6 @@ By scripting these tasks, you reduce the attack surface caused by manual errors 
 ## Repository Structure
 - Shell-Scripting
   - Introduction
-    - README.md
   - Variables-and-Parameters
   - Lists
   - Loops
@@ -57,6 +56,5 @@ By scripting these tasks, you reduce the attack surface caused by manual errors 
   - Command Substitution
   - Tests
   - Project-Filesystem-Object-Inspector
-    - FileInspector.sh
 
 
