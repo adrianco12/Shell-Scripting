@@ -1,10 +1,10 @@
-# 🐧 Linux Shell Scripting for System Administration
+# Linux Shell Scripting for System Administration
 
 Welcome to the **Linux Shell Scripting** repository — a practical collection of shell scripts and learning resources designed to teach you how to automate system administration tasks using the Linux command line.
 
 ---
 
-## 📌 Purpose
+## Purpose
 
 This repository is a hands-on learning toolkit for:
 
@@ -17,7 +17,7 @@ Whether you're a beginner just getting started with Linux or an aspiring sysadmi
 
 ---
 
-## 🛠️ Why Shell Scripting?
+## Why Shell Scripting?
 
 Shell scripting is one of the most essential skills in Linux system administration. Here's why:
 
@@ -29,7 +29,7 @@ Shell scripting is one of the most essential skills in Linux system administrati
 
 ---
 
-## 🔐 Shell Scripting and Security
+## Shell Scripting and Security
 
 Shell scripting plays a critical role in **system security**:
 
@@ -43,5 +43,30 @@ By scripting these tasks, you reduce the attack surface caused by manual errors 
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
+# Shell Scripting Repository
+
+Shell-Scripting/
+├── Introduction/
+│   └── README.md
+├── Variables-and-Parameters/
+├── Lists/
+│   └── <list scripts/files>
+├── Loops/
+│   └── <loop scripts/files>
+├── Operations/
+│   └── <operation scripts/files>
+├── Debugging/
+│   └── Debugging.sh
+├── Regular Expressions/
+│   └── <regex scripts/files>
+├── Sed/
+│   └── <sed scripts/files>
+├── Command Substitution/
+│   └── <command substitution scripts/files>
+├── Tests/
+│   └── README.md
+└── Project-Filesystem-Object-Inspector/
+    └── FileInspector.sh
+
 
