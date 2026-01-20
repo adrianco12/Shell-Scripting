@@ -44,29 +44,27 @@ By scripting these tasks, you reduce the attack surface caused by manual errors 
 ---
 
 ## Repository Structure
-# Shell Scripting Repository
-
-Shell-Scripting/
-├── Introduction/
-│   └── README.md
-├── Variables-and-Parameters/
-├── Lists/
-│   └── <list scripts/files>
-├── Loops/
-│   └── <loop scripts/files>
-├── Operations/
-│   └── <operation scripts/files>
-├── Debugging/
-│   └── Debugging.sh
-├── Regular Expressions/
-│   └── <regex scripts/files>
-├── Sed/
-│   └── <sed scripts/files>
-├── Command Substitution/
-│   └── <command substitution scripts/files>
-├── Tests/
-│   └── README.md
-└── Project-Filesystem-Object-Inspector/
-    └── FileInspector.sh
+- Shell-Scripting
+  - Introduction
+    - README.md
+  - Variables-and-Parameters
+  - Lists
+    - <list scripts/files>
+  - Loops
+    - <loop scripts/files>
+  - Operations
+    - <operation scripts/files>
+  - Debugging
+    - Debugging.sh
+  - Regular Expressions
+    - <regex scripts/files>
+  - Sed
+    - <sed scripts/files>
+  - Command Substitution
+    - <command substitution scripts/files>
+  - Tests
+    - README.md
+  - Project-Filesystem-Object-Inspector
+    - FileInspector.sh
 
 
